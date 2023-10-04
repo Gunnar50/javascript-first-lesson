@@ -10,7 +10,7 @@ function double(num) {
 setTimeout(() => console.log("This message is logged after 5 seconds"), 5000);
 
 // 3.	Create a timer than consoles.logs a message every 5 seconds
-// setInterval(() => console.log("This message is logged every 5 seconds"), 5000);
+setInterval(() => console.log("This message is logged every 5 seconds"), 5000);
 
 // 4.	Create a function, inside the function add a second function, and again add a third function into the second function
 // 5.	Create 3 variable, then define 3 the variables in the correct place so that:
@@ -27,7 +27,7 @@ function first() {
 			const var3 = "Variable 3";
 
 			// 9.	Define a 4th variable inside the 3rd function. This variable should be accessible by every function
-			var4 = "Variable 4"; // was i suppouse to use the global variable?
+			var4 = "Variable 4"; // was I suppouse to use the global variable?
 
 			// 10.	Create a scope inside the 3rd function, place a variable inside it that is only accessible inside that scope
 			{
