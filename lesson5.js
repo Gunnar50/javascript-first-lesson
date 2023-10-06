@@ -26,3 +26,17 @@ console.log(arrayFromName);
 Array.isArray(arrayFromName);
 
 // Use the object property shorthand
+
+const createBook = (title, author, noPages) => {
+	return {
+		title,
+		author,
+		noPages,
+		// Use the function shorthand in an object
+		details() {
+			return `Book title: ${title}\nAuthor: ${author}\nNumber of pages: ${noPages}`;
+		},
+	};
+};
+const harryPotter = createBook("Harry Potter", "JK Rowling", 200);
+console.log(harryPotter.details());
