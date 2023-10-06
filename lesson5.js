@@ -10,3 +10,19 @@ const person = {
 	age: 20,
 };
 const { name: firstName = "No Name", age: userAge = "No Age" } = person;
+// Use the array method Flat
+const matrix = [
+	[0, 0, 0],
+	[1, 1, 1],
+	[2, 2, 2],
+];
+console.log(matrix.flat());
+
+// Use Array.from
+const arrayFromName = Array.from(firstName);
+console.log(arrayFromName);
+
+// Use Array.isArray
+Array.isArray(arrayFromName);
+
+// Use the object property shorthand
