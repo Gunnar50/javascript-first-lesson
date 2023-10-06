@@ -70,3 +70,21 @@ class Furniture {
 		return `${this.type} of the material ${this.material}`;
 	}
 }
+
+// Extend the class into two other classes
+class Chair extends Furniture {
+	constructor(material) {
+		super("chair", material);
+	}
+}
+
+class Table extends Furniture {
+	constructor(material) {
+		super("table", material);
+	}
+}
+
+const furnitures = [new Chair("wood"), new Table("metal")];
+furnitures.forEach((f) => {
+	console.log(f.getDetails());
+});
