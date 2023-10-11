@@ -406,6 +406,8 @@ function populateNode(node, content) {
 // get the reference for the body
 const bodyRef = document.getElementsByTagName("body")[0];
 
+// here is where everything starts.
+// loop through the nodes and adds them to the body.
 function createHTML() {
 	for (const node of nodes.reverse()) {
 		bodyRef.prepend(createSingleTag(node));
