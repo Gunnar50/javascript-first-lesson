@@ -1,0 +1,16 @@
+.error {
+	max-height: 0;
+	overflow: hidden;
+	margin-top: 0;
+	color: red;
+	transition: max-height 300ms ease, margin-top 300ms ease;
+}
+
+.error.show {
+	max-height: 50px;
+	margin: 10px 0;
+}
+
+.input-error {
+	background-color: #ffa5a5bf;
+}
